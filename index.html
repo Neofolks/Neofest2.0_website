@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neofest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Buttons ------------------------------------------------------------------------------------------>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Schedule">Schedule</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="#ContactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Home Section ------------------------------------------------------------------------------------------>
+    <section id="Home">
+        <div>
+            <div id="logoForMobile">
+                <img src="images/NUVLogo.png" width="120px" alt="NEOFOLKS" id="neofolksImageTop"></img>
+                <img src="images/Hacktober.png" width="150px" alt="HACKCLUB" id="hackclubImageTop"></img>
+            </div>
+
+
+            <p class="home_title_text_1">NEOFEST&nbsp;</p>
+            <p class="home_title_text_2">2.0</p>
+            <p class="neofestMobile">NEOFEST<br>2.0</p>
+            <p class="home_text">Register Now for Hacktoberfest<br><br><a href="#RSVP" id="rsvpButton"
+                    class="rsvp_button">RSVP</a></p>
+        </div>
+    </section>
+
+    <!-- Schedule Section ------------------------------------------------------------------------------------------>
+    <section id="Schedule">
+        <div class="schedule">
+            <table>
+                <caption>Schedule</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Time slot</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>reporting time</td>
+                        <td>09:00 Am - 09:30 am</td>
+                    </tr>
+                    <tr>
+                        <td>check-in</td>
+                        <td>09:30 Am - 10:00 am</td>
+                    </tr>
+                    <tr>
+                        <td>introduction to hacktoberfest / open source</td>
+                        <td>10:00 Am - 10:30 am</td>
+                    </tr>
+                    <tr>
+                        <td>git/github workshop</td>
+                        <td>10:30 Am - 12:00 am</td>
+                    </tr>
+                    <tr>
+                        <td>networking session</td>
+                        <td>12:00 Am - 12:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td>gdsc slot</td>
+                        <td>12:30 pm - 01:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td>lunch break</td>
+                        <td>01:30 pm - 02:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td>talk session - 2 / sponsors slot</td>
+                        <td>02:30 pm - 03:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>imposter hunt / game</td>
+                        <td>03:00 pm - 03:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td>ideathon</td>
+                        <td>03:30 pm - 05:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td>swags distribution and check-out</td>
+                        <td>05:00 pm - 06:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- About Us Section ------------------------------------------------------------------------------------------>
+    <section id="AboutUs">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <div class="about-sus">
+            <div class="header">
+                <div class="glow-btn"></div>
+                <div class="header-content">
+                    <!-- TODO: Account for line breaks. These may be caused by overflow, etc. -->
+                    Hacktoberfest 2023
+                </div>
+                <div class="header-aside">
+                    <!-- Hack div to be able to add spacing around text without breaking rest of the layout. -->
+                    <div class="aside-content">
+                        Neofolks X GDSC
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="stuff">
+                    <h2>About Us</h2>
+                    <ul class="people">
+                        <!-- Placeholder names taken from Bing chat -->
+                        <li class="person">
+                            <button type="button" class="btn-text btn-neofolks" onclick="goToSlide(0)">
+                                Neofolks
+                            </button>
+                        </li>
+
+                        <li class="person">
+                            <button type="button" class="btn-text btn-hack-club" onclick="goToSlide(1)">
+                                Hack Club
+                            </button>
+                        </li>
+
+                        <li class="person ">
+                            <button type="button" class="btn-text btn-past-events" onclick="goToSlide(2)">
+                                Our Past Events
+                            </button>
+                        </li>
+
+                        <li class="person">
+                            <button type="button" class="btn-text btn-faq" onclick="goToSlide(3)">
+                                FAQ's
+                            </button>
+                        </li>
+                        <!-- a sarcastic and brilliant hacker who survives a massive space battle and communicates through his messages. -->
+                    </ul>
+                </div>
+                <div class="slides">
+                    <div class="slide sus">
+                        <div class="slide-text">
+                            Neofolks
+                            <br><br>
+                            Neofolks is a joint initiative of young and passionate students at Navrachana University who
+                            came together to organize events with the motive of bringing out innovative ideas,
+                            developing technical skills and connecting like minded individuals together. The folks at
+                            neofolks along the way became the pillars for upholding the Hack Club NUV community.
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            Hack Club
+                            <br><br>
+                            Hack Club NUV is an inclusive community to support passionate techies just like you and I.
+                            This community aims at creating a collaborative learning environment where individuals can
+                            share knowledge. Hack Club NUV also organizes beginner-friendly tech events and hackathons
+                            locally at the college.
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            Our Past Events
+                            <br><br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus cupiditate fugit facere,
+                            perspiciatis itaque ea voluptate nam fuga provident, ab placeat maxime adipisci corporis
+                            veniam
+                            doloribus mollitia ratione. Quisquam, tempore!
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            FAQ's
+                            <br><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet possimus cupiditate
+                            ratione amet? Illum animi libero iure facere. Praesentium enim voluptates dolorem
+                            reprehenderit
+                            voluptas perferendis exercitationem alias fugit quod.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileSlides">
+            <p id="aboutUsMobileTitle">About Us</p>
+            <div class="mobileSlide">
+                <p>Neofolks</p><br>
+                <p>Neofolks is a joint initiative of young and passionate students at Navrachana University who came
+                    together to organize events with the motive of bringing out innovative ideas, developing technical
+                    skills and connecting like minded individuals together. The folks at neofolks along the way became
+                    the pillars for upholding the Hack Club NUV community.</p>
+
+
+
+            </div>
+            <div class="mobileSlide">
+                <p>Hack Club</p>
+                <br>
+                <p>Hack Club NUV is an inclusive community to support passionate techies just like you and I. This
+                    community aims at creating a collaborative learning environment where individuals can share
+                    knowledge. Hack Club NUV also organizes beginner-friendly tech events and hackathons locally at the
+                    college.</p>
+            </div>
+            <div class="mobileSlide">
+                <p>Our Past Events</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus cupiditate fugit facere,
+                    perspiciatis itaque ea voluptate nam fuga provident, ab placeat maxime adipisci corporis
+                    veniam
+                    doloribus mollitia ratione. Quisquam, tempore!</p>
+            </div>
+            <div class="mobileSlide">
+                <p>FAQ's</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet possimus cupiditate
+                    ratione amet? Illum animi libero iure facere. Praesentium enim voluptates dolorem
+                    reprehenderit
+                    voluptas perferendis exercitationem alias fugit quod.</p>
+            </div>
+        </div>
+
+        <!-- JS for the slider. Put here to ensure that it is loaded AFTER the DOM is loaded. -->
+        <script>
+            const slides = document.querySelectorAll('.slides > .slide');
+            const slideButtons = document.querySelectorAll('.people .btn-text');
+            /**
+             * Fuction to get the current slide visible in slideshow. Is 0 indexed.
+             * @param {NodeListOf<Element>} slidesList: List of slides to be considered.
+             * @params {string} matcher: If this class is present, the slide is considered to be active. Only the first instance is considered for perf reasons.
+            */
+            function getCurrentPosition(slidesList = slides, matcher = "sus") {
+                for (const key in slidesList) {
+                    if (Object.hasOwnProperty.call(slidesList, key)) {
+                        const keySlide = slidesList[key];
+                        if (keySlide.classList.contains(matcher)) {
+                            return key;
+                        }
+                    }
+                }
+            }
+
+            /**
+             * Makes slide at `index` active.
+             * @param {NodeListOf<Element>} slidesList: List of slides to be considered.
+             * @params {number} index: Slide index to be made active. Is 0 indexed.
+             * @params {string} matcher: If this class is present, the slide is considered to be active. Only the first instance is considered for perf reasons.
+            */
+            function goToSlide(index = 0, slidesList = slides, matcher = "sus") {
+                for (const key in slidesList) {
+                    if (Object.hasOwnProperty.call(slidesList, key)) {
+                        const slide = slidesList[key];
+                        if (key == index) {
+                            slide.classList.add(matcher);
+                        } else {
+                            slide.classList.remove(matcher);
+                        }
+                    }
+                }
+                return;
+            }
+
+            function goPrev(slidesList = slides, matcher = "sus") {
+                let currIndex = getCurrentPosition(slidesList, matcher);
+                if (currIndex == 0) {
+                    currIndex = slidesList.length - 1;
+                }
+                else {
+                    currIndex--;
+                }
+                goToSlide(currIndex, slidesList, matcher);
+            }
+
+            function goNext(slidesList = slides, matcher = "sus") {
+                let currIndex = getCurrentPosition(slidesList, matcher);
+                if (currIndex == (slidesList.length - 1)) {
+                    currIndex = 0;
+                }
+                else {
+                    currIndex++;
+                }
+                goToSlide(currIndex, slidesList, matcher);
+            }
+        </script>
+    </section>
+
+    <!-- Contact Us Section ------------------------------------------------------------------------------------------>
+    <section id="ContactUs">
+        <div>
+            <div class="contact-text">Contact US</div>
+            <div class="vertical-container">
+                <div class="horizontal-container">
+                    <a href="#" class="contactus_link_button">EMAIL</a>
+                    <a href="#" class="contactus_link_button">INSTAGRAM</a>
+                </div>
+                <div class="horizontal-container">
+                    <a href="#" class="contactus_link_button">LINKEDIN</a>
+                    <a href="#" class="contactus_link_button">DISCORD</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section ------------------------------------------------------------------------------------------>
+    <section id="Sponsors">
+        <div>
+            <p class="sponsors_title">Sponsors</p>
+            <p class="sponsors_subtitle">Powered by</p>
+            <table class="sponsors_table">
+                <tr>
+                    <th class="sponsors_th">Title Sponsors</th>
+                    <th class="sponsors_th">Ecosystem Sponsors</th>
+                </tr>
+            </table>
+            <p class="sponsors_subtitle">Supported by</p>
+        </div>
+    </section>
+
+    <!-- Community Partners Section ------------------------------------------------------------------------------------------>
+    <section id="CommunityPartners">
+        <div class="community_div">
+            <p class="community_title">Community Partners</p>
+            <img src="images/GDSC.png" alt="GDSC Community" id="GDSCImage">
+        </div>
+    </section>
+
+    <!-- RSVP Page ------------------------------------------------------------------------------------------>
+    <section id="RSVP">
+        <div class="RSVPDiv">
+            <p class="register_title_hack">Hacktoberfest</p>
+            <p class="register_title_neo">NEOFOLKS</p>
+            <p class="register_text">Register Now for Hacktoberfest<br><a href="#" class="register_link">REGISTER
+                    NOW</a></p>
+
+            <p class="register_address">Address: Navrachana University, Vasna-Bhayli Main Road,<br>Vadodara, Gujarat
+                391410<br><a href="#" class="register_map">OPEN IN GOOGLE MAPS</a></p>
+
+            <p class="team_text">Made with &#10084; by HacktoberFest NUV Team</p>
+
+            <img src="images/Neofolks.png" width="120px" alt="NEOFOLKS" id="neofolksImage"></img>
+            <img src="images/Hackclub.png" width="120px" alt="HACKCLUB" id="hackclubImage"></img>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

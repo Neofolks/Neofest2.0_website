@@ -1,0 +1,899 @@
+@font-face {
+    font-family: headFont;
+    src: url(fonts/PressStart2p.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(fonts/PlayFairDisplay.ttf);
+}
+
+@font-face {
+    font-family: aboutUsFont;
+    src: url(fonts/PlayFairDisplay.ttf);
+}
+
+@font-face {
+    font-family: teamText;
+    src: url(fonts/ProductSansRegular.ttf);
+}
+
+/* Arbritary font for the 'A' in 'About Us'. The original design is a custom glyph. */
+@font-face {
+    font-family: 'Among Us';
+    src: url(fonts/AmongUs.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(7, 5, 31, 1);
+    font-family: "bodyFont";
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Main Section Handler */
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#Home {
+    background: url("images/Home.png") center/contain no-repeat;
+}
+
+#Schedule {
+    background: url("images/Schedule.png") center/contain no-repeat;
+}
+
+#AboutUs {
+    background: url("images/AboutUs.png") center/contain no-repeat;
+}
+
+#ContactUs {
+    background: url("images/ContactUs.png") center/contain no-repeat;
+}
+
+#Sponsors {
+    background: url("images/Schedule.png") center/contain no-repeat;
+}
+
+#CommunityPartners {
+    background: url("images/Schedule.png") center/contain no-repeat;
+}
+
+#RSVP {
+    background: url("images/Footer.png") center/contain no-repeat;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Navigation Buttons */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer nav ul {
+    background-color: black;
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+    border: 2px white solid;
+    border-radius: 0.4em;
+    margin: 10px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    border: 2px white solid;
+    border-radius: 0.4rem;
+    padding: 3px 10px;
+    margin: 2px 10px;
+    width: 7rem;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Index Page */
+
+.home_title_text_1 {
+    font-family: 'headFont';
+    font-size: 7rem;
+    margin-top: 1em;
+
+    background: linear-gradient(#BF40BF, #2b0080, #2b0080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px -15px 1px rgba(255, 255, 255, 0.418);
+    text-shadow: 0px 8px 1px rgba(255, 255, 255, 0.137);
+}
+
+.home_title_text_2 {
+    font-family: 'headFont';
+    font-size: 6rem;
+    text-align: right;
+
+    background: linear-gradient(#BF40BF, #2b0080, #2b0080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px -15px 1px rgba(255, 255, 255, 0.418);
+    text-shadow: 0px 8px 1px rgba(255, 255, 255, 0.137);
+
+    margin-bottom: 1em;
+}
+
+.neofestMobile {
+    display: none;
+}
+
+.home_text {
+    font-family: 'headFont';
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.rsvp_button {
+    border: 2px white solid;
+    font-family: 'bodyFont';
+    padding: 3px 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Schedule Page */
+.schedule {
+    width: 50%;
+}
+
+table {
+    align-items: baseline;
+    border-collapse: collapse;
+    font-family: 'bodyFont';
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+th {
+    text-align: center;
+}
+
+/* giving background colour to even rows of table head*/
+thead>tr:nth-child(even) {
+    background: rgba(20, 30, 42, 0.5);
+}
+
+/* giving background colour to odd rows of table head*/
+th:first-child,
+td:first-child {
+    padding: 0.5% 3% 0.5%;
+    width: 0.95%;
+    /* Adjust the width as needed */
+}
+
+/* Set the width for the second column */
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: center;
+    width: 0.95%;
+    /* Adjust the width as needed */
+}
+
+/* giving odd rows of thead background colour */
+thead>tr:nth-child(odd) {
+    background: rgba(41, 55, 75, 0.5);
+}
+
+/* giving even rows background colour */
+tr:nth-child(even) {
+    background: rgba(41, 55, 75, 0.5);
+}
+
+/* giving odd rows background colour */
+tr:nth-child(odd) {
+    background: rgba(20, 30, 42, 0.5);
+}
+
+/* property of the caption of the table */
+caption {
+    font-family: 'headFont';
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* About Us Page */
+
+.about-sus {
+    font-family: "bodyFont", sans-serif;
+    padding: 0;
+    margin: 1.5em;
+    display: grid;
+    color: white;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "content";
+    padding: 1.5rem;
+    --sus-border: 2px solid white;
+    --sus-border-radius: 3rem;
+    background: #ffffff2c;
+    border-radius: 0.6em;
+    border: 1px solid #ffffffa8;
+    width: 60%;
+}
+
+/* Full width header. Sticks to the top with minimum height. */
+.about-sus>.header {
+    width: 100%;
+    grid-area: header;
+    align-self: flex-start;
+    --header-font-size: 1.2rem;
+    --header-height: calc(var(--header-font-size)*2);
+    font-size: var(--header-font-size);
+    height: var(--header-height);
+    /* `.header-aside` takes min-width, `.header-content` takes rest */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: var(--header-height) 1fr auto;
+    grid-template-areas: "header-btn header-content header-aside";
+    column-gap: 0.5rem;
+    outline: var(--sus-border);
+    border-radius: var(--sus-border-radius);
+    background-color: rgba(255 255 255 / 0.2);
+    margin-bottom: 2em;
+}
+
+.header>.glow-btn {
+    grid-area: header-btn;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    width: auto;
+    height: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #F000FF;
+    /* Shadows are obtained by eye */
+    border: 0.2rem solid rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 1rem 0.25rem rgba(240, 1, 255, 1);
+}
+
+/* Content takes all available space vertically and horizontally */
+.header>.header-content {
+    grid-area: header-content;
+    justify-self: stretch;
+    align-self: center;
+    /* outline: var(--debug-border); */
+}
+
+/* Aside takes minimal space on the right side with full height */
+.header>.header-aside {
+    grid-area: header-aside;
+    justify-self: end;
+    align-self: stretch;
+    outline: var(--sus-border);
+    border-radius: var(--sus-border-radius);
+    /* Centering hack. Breaks with explicit children. */
+    display: flex;
+    place-items: center;
+    background-color: rgba(39, 39, 39, 0.2);
+}
+
+/*
+Add spacing around text to keep it away from border.
+Hack as doing it the right way causes overflow.
+*/
+.header-aside>* {
+    margin: 0.5rem;
+}
+
+/* Full width content body. Takes all remaining height. */
+.about-sus>.content {
+    width: 100%;
+    grid-area: content;
+    align-self: stretch;
+    /* TODO: Replace with Flex. Using Grid for now. */
+    display: grid;
+    /* slides take 2/3 the width */
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "stuff slides";
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.content>.stuff {
+    grid-area: stuff;
+}
+
+.stuff>h2 {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+}
+
+.stuff>h2::first-letter {
+    font-family: "Among Us", "Joffery", sans-serif;
+    /* Uncomment for more sus */
+    /* color: red; */
+}
+
+.stuff>.people {
+    border: var(--sus-border);
+    border-radius: 1rem;
+    padding: 0;
+    display: flex;
+    justify-items: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    column-gap: 1rem;
+    padding: 1rem;
+    background: #00000069;
+}
+
+.people>.person {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0.5rem;
+}
+
+.person>button {
+    color: #ffffff;
+    border: var(--sus-border);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    /* margin: 1rem; */
+    padding: 0.5rem;
+    background-color: rgba(104, 104, 104, 0.116);
+    width: max-content;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition-property: background-color transform;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+}
+
+button:hover,
+button:focus {
+    background-color: rgba(255 255 255 / 0.5);
+    transform: scale(1.025);
+    transition-property: background-color transform;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+}
+
+.content>.slides {
+    height: 100%;
+    background: #000000;
+    font-size: 1.5rem;
+    grid-area: slides;
+    outline: var(--sus-border);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "btn-bk slide btn-fr";
+}
+
+.slides>.prev {
+    grid-area: btn-bk;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    align-self: center;
+    /* border: var(--debug-border); */
+    aspect-ratio: 1;
+    /* Mirroring as `expand_chevron_left` does not exist in Material Symbols. */
+    transform: scale(-1, 1);
+}
+
+.slides>.next {
+    grid-area: btn-fr;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    align-self: center;
+    /* border: var(--debug-border); */
+    aspect-ratio: 1;
+}
+
+.slides>.slide {
+    grid-area: slide;
+    /* Have all slides be invisible by default. */
+    visibility: hidden;
+    /* The design shows the image and text being arranged side-by-side. This is replicated here as-is in basence of any
+    further directions. */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "slide-img slide-txt";
+    align-items: center;
+    justify-items: center;
+    column-gap: 1rem;
+    padding: 0.5rem;
+    animation-name: slide-make-invisible;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+
+.slide>.slide-img {
+    grid-area: slide-img;
+}
+
+.slide-img>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Requirements changed */
+/* .slide>.slide-text {
+    grid-area: slide-txt;
+    font-family: "Inter", sans-serif;
+} */
+
+.slides>.slide.sus {
+    /* Selected slide is visible. This class will be set/unset using js. */
+    visibility: visible;
+    animation-name: slide-make-visible;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-make-visible {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-make-invisible {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+#mobileSlides {
+    display: none;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Contact Us Styles */
+
+.contact-text {
+    font-size: 4rem;
+    color: white;
+    font-family: "headFont";
+
+}
+
+/* Container for 2 rows in column */
+.vertical-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for 2 buttons in 2 rows */
+.horizontal-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactus_link_button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 5px auto;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: white;
+    font-family: "bodyFont";
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px 3px rgb(80, 80, 80);
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Sponsors Page */
+
+.sponsors_title,
+.sponsors_subtitle,
+.sponsors_th {
+    font-family: 'headFont';
+    text-align: center;
+    margin-bottom: 2em;
+    align-content: center;
+}
+
+.sponsors_title {
+    font-size: 4rem;
+}
+
+.sponsors_subtitle {
+    font-size: 2rem;
+    margin-top: 2em;
+}
+
+.sponsors_table {
+    width: 60vmax;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Community Partners Page */
+
+.community_title {
+    font-family: 'headFont';
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.community_div {
+    text-align: center;
+}
+
+#GDSCImage {
+    height: 120px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Register Page */
+
+.register_title_hack {
+    font-family: 'headFont';
+    font-size: 4rem;
+    text-align: center;
+}
+
+.register_title_neo {
+    font-family: 'bodyFont';
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-shadow:
+        -1px -1px 35px #C598EB,
+        1px -1px 35px #C598EB,
+        -1px 1px 35px #C598EB,
+        1px 1px 35px #C598EB;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.register_text {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.register_link {
+    border: 2px white solid;
+    font-family: 'bodyFont';
+    padding: 3px 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+}
+
+.register_address {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+}
+
+.register_map {
+    border: 2px white solid;
+    font-family: 'bodyFont';
+    padding: 3px 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+}
+
+.team_text {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-family: 'teamText';
+}
+
+#neofolksImage {
+    float: left;
+}
+
+#hackclubImage {
+    float: right;
+}
+
+#logoForMobile {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    #logoForMobile {
+        visibility: visible;
+    }
+
+    #Home,
+    #Schedule,
+    #AboutUs,
+    #ContactUs,
+    #Sponsors,
+    #CommunityPartners,
+    #RSVP {
+        background: none;
+        height: auto;
+        width: auto;
+    }
+
+    .neofestMobile {
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-family: 'headFont';
+        font-size: 3rem;
+
+        background: linear-gradient(#BF40BF, #2b0080, #2b0080);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0px -15px 1px rgba(255, 255, 255, 0.418);
+        text-shadow: 0px 8px 1px rgba(255, 255, 255, 0.137);
+    }
+
+    footer {
+        display: none;
+    }
+
+    .home_title_text_1,
+    .home_title_text_2 {
+        display: none;
+    }
+
+    .home_text,
+    .rsvp_button {
+        font-size: 1rem;
+    }
+
+    .schedule {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 2rem;
+        border-top: 2px solid white;
+        padding-top: 2rem;
+    }
+
+    #AboutUs {
+        border-top: 2px solid white;
+    }
+
+    .about-sus {
+        display: none;
+    }
+
+    #aboutUsMobileTitle {
+        font-size: 2rem;
+        font-family: 'headFont';
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #mobileSlides {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .mobileSlide {
+        background: #000000;
+        color: white;
+        border: 1px solid white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .contact-text {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .vertical-container {
+        padding: 1rem;
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    #ContactUs {
+        border-bottom: 2px solid #ffffff;
+        border-top: 2px solid #ffffff;
+    }
+
+    .horizontal-container {
+        flex-direction: column;
+    }
+
+    .contactus_link_button {
+        height: auto;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .sponsors_title {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sponsors_subtitle {
+        font-size: 1rem;
+    }
+
+    .sponsors_table {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .sponsors_th {
+        font-size: 0.8rem;
+    }
+
+    #CommunityPartners {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    .community_title {
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #GDSCImage {
+        width: 90%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .RSVPDiv {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .register_title_hack {
+        font-size: 1rem;
+    }
+
+    .register_title_neo {
+        font-size: 2rem;
+    }
+
+    .register_text {
+        font-size: 1.5rem;
+    }
+
+    .register_link {
+        font-size: 1rem;
+    }
+
+    .register_address {
+        font-size: 1.5rem;
+    }
+
+    .register_map {
+        font-size: 1rem;
+    }
+
+    .team_text {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
